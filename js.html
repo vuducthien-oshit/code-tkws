@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // var x =10;
+        // var s = "xin chào";
+        // document.write("<h1 style ='color: red '>" + s + "</h1>");
+        // // Khai báo hàm không có giá trị trả vè
+        // function tinhtong(){
+        //     alert("Tổng của hai số 4 va 5 là" + (4+5));
+
+        // }
+        // //Khai bào có giá tri trả về
+        // function tt (){
+        //     return 6 +5;
+
+        // }
+        // // gọi và hiển thị hàm
+        // tinhtong();
+        // // gọi hàm có giá trị trả về
+        // var c = tt();
+        // document.write("Tổng hai số alf " + c);
+        // tính tổng
+        function tinhtong1(){
+            //Lấy giá trị 
+            var s1 = document.getElementById("số 1").value;
+            var s2 = document.getElementById("só 2").value;
+            document.getElementById("kq").innerHTML ="Tổng hai số là : "+ (Number(s1)+ Number(s2));
+        }
+        function get_content(){
+            document.getElementById("hienthi_nd").innerHTML = document.getElementById("nd").value;
+        }
+        // chuẩn ES6 trong Javascript
+        // arrow function
+        let b = tinhtong2 =(a,b)=> {
+            a+b ;}
+        alert (b(3,5));
+        //bài tập về nhà 
+        // tìm hiểu jquery kích vào button để đổi màu
+        
+    </script>  
+    <title>Document</title>
+</head>
+<body>
+    
+        Nhập vào số thứ 1:
+        <input type="text" id="số 1"/>
+        Nhập vào số thứ 2:
+        <input type="text" id="só 2"/>
+        <input type="submit" onclick="tinhtong1();" value="tính tổng"/>
+        Nhập vào nội dung đoạn văn
+        <textarea id="nd" rows="5" onkeyup="get_content();"></textarea>
+        <h4 id="hienthi_nd"></h4>
+    <h3 id="kq"></h3>
+    
+</body>
+</html>
